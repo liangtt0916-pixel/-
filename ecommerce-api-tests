@@ -1,0 +1,13 @@
+ecommerce-api-tests/
+├── conftest.py          # fixture：base_url, token等
+├── tests/
+│   ├── test_users.py    # 用户注册/登录/获取
+│   ├── test_orders.py   # 创建/查询订单
+│   ├── test_payments.py # 支付模拟
+├── utils/
+│   ├── api_client.py    # Requests封装
+│   ├── db_checker.py    # 简单SQLite模拟数据库校验（或用API返回校验）
+├── data/
+│   ├── test_data.csv    # 参数化数据
+├── requirements.txt     # pytest, requests, pytest-html 等
+├── run.bat / pytest.ini
